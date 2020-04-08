@@ -1,0 +1,7 @@
+<strong>Users:</strong>     <%= User.count %> </br>
+<strong>Questions:</strong> <%= Question.count %> </br>
+<strong>Answers:</strong>   <%= Answer.count %> </br>
+
+<% Tenant.all.each do |tenant| %>
+	<strong><%= tenant.id %></strong>, <%= tenant.name %> </br>
+<% end %>
