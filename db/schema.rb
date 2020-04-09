@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200409024358) do
+ActiveRecord::Schema.define(version: 20200409034101) do
 
   create_table "answers", force: :cascade do |t|
     t.string   "body",        null: false
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20200409024358) do
 
   create_table "questions", force: :cascade do |t|
     t.string   "title",                      null: false
-    t.boolean  "private",    default: false
+    t.boolean  "is_private", default: false
     t.integer  "user_id"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
