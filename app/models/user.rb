@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 
-  has_many :questions, inverse_of: :asker, dependent: :destroy
-  has_many :answers,   inverse_of: :answerer
+  has_many :questions, dependent: :destroy
+  has_many :answers, dependent: :destroy
+
   validates :name, presence: true
 end
