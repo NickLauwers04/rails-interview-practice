@@ -2,7 +2,7 @@ class Tenant < ActiveRecord::Base
 
   before_create :generate_api_key
 
-  validates :name, :api_key, presence: true
+  validates :name, presence: true
   
   private
 

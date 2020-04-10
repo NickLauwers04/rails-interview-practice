@@ -32,7 +32,7 @@ RSpec.describe 'Answers API' do
 			end
 
 			it 'returns a not found message' do
-				expect(response.body).to match(/Couldn't find question/)
+				expect(response.body).to match(/Couldn't find Question/)
 			end
 		end
 	end
